@@ -1,0 +1,470 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context="com.amirahmed.podra.MainActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:background="@color/colorPrimary"
+        android:gravity="center"
+        android:orientation="horizontal">
+
+        <TextView
+            android:id="@+id/cardnumberstext"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="#FFF"
+            android:textStyle="bold"
+            android:text="٢٠  كارت"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="#000000"
+            android:textStyle="bold"
+            android:text="الرصيد الحالى: "/>
+
+
+    </LinearLayout>
+
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@drawable/background">
+
+
+        <ImageView
+            android:id="@+id/camera"
+            android:layout_width="35dp"
+            android:layout_height="35dp"
+            android:src="@drawable/ic_camera_alt_white_24dp"
+            android:layout_alignParentRight="true"
+            android:layout_marginTop="10dp"
+            android:layout_marginRight="20dp"/>
+
+        <ImageView
+            android:id="@+id/imageview"
+            android:layout_width="65dp"
+            android:layout_height="65dp"
+            android:src="@drawable/ic_image_white_24dp"
+            android:layout_alignParentRight="true"
+            android:layout_marginTop="10dp"
+            android:layout_below="@+id/camera"
+            android:layout_marginRight="20dp"/>
+
+        <TextView
+            android:id="@+id/logout"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="تسجيل الخروج"
+            android:textColor="#9C0B03"
+            android:textStyle="bold"
+            android:textSize="18sp"
+            android:layout_marginLeft="10dp"
+            android:layout_marginTop="230dp"/>
+
+        <LinearLayout
+            android:id="@+id/addlayout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:visibility="visible"
+            android:orientation="vertical">
+
+
+            <ScrollView
+                android:layout_width="match_parent"
+                android:layout_height="190dp"
+                android:layout_marginTop="260dp">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical">
+
+                    <EditText
+                        android:id="@+id/nameedittext"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:background="@drawable/rounded"
+                        android:hint="الاسم الشركة"
+                        android:padding="3dp"
+                        android:layout_marginLeft="20dp"
+                        android:layout_marginRight="20dp"/>
+
+                    <EditText
+                        android:id="@+id/addressedittext"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:background="@drawable/rounded"
+                        android:hint="العنوان"
+                        android:padding="3dp"
+                        android:layout_marginTop="20dp"
+                        android:layout_marginLeft="20dp"
+                        android:layout_marginRight="20dp"/>
+
+                    <EditText
+                        android:id="@+id/disnameedittext"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:background="@drawable/rounded"
+                        android:hint="اسم الموزع"
+                        android:padding="3dp"
+                        android:layout_marginTop="20dp"
+                        android:layout_marginLeft="20dp"
+                        android:layout_marginRight="20dp"/>
+
+                    <EditText
+                        android:id="@+id/phoneedittext"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:background="@drawable/rounded"
+                        android:hint="رقم الهاتف"
+                        android:padding="3dp"
+                        android:inputType="phone"
+                        android:textAlignment="viewEnd"
+                        android:layout_marginTop="20dp"
+                        android:layout_marginLeft="20dp"
+                        android:layout_marginRight="20dp"/>
+
+                    <EditText
+                        android:id="@+id/emailedittext"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:background="@drawable/rounded"
+                        android:hint="البريد الالكترونى"
+                        android:inputType="textEmailAddress"
+                        android:padding="3dp"
+                        android:layout_marginTop="20dp"
+                        android:layout_marginLeft="20dp"
+                        android:layout_marginRight="20dp"/>
+
+                    <EditText
+                        android:id="@+id/websiteedittext"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:background="@drawable/rounded"
+                        android:hint="الموقع الألكترونى"
+                        android:padding="3dp"
+                        android:layout_marginTop="20dp"
+                        android:layout_marginLeft="20dp"
+                        android:layout_marginRight="20dp"/>
+
+                    <EditText
+                        android:id="@+id/cardsnumberedittext"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:background="@drawable/rounded"
+                        android:hint="عدد الكروت"
+                        android:padding="3dp"
+                        android:inputType="number"
+                        android:layout_marginTop="20dp"
+                        android:layout_marginLeft="20dp"
+                        android:layout_marginRight="20dp"/>
+
+                    <EditText
+                        android:id="@+id/cityedittext"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:background="@drawable/rounded"
+                        android:hint="المدينة"
+                        android:padding="3dp"
+                        android:layout_marginTop="20dp"
+                        android:layout_marginLeft="20dp"
+                        android:layout_marginRight="20dp"/>
+
+                    <EditText
+                        android:id="@+id/passwordedittext"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:background="@drawable/rounded"
+                        android:hint="كلمة المرور"
+                        android:inputType="textPassword"
+                        android:padding="3dp"
+                        android:layout_marginTop="20dp"
+                        android:layout_marginLeft="20dp"
+                        android:layout_marginRight="20dp"/>
+
+
+                </LinearLayout>
+
+            </ScrollView>
+
+            <Button
+                android:id="@+id/addbutton"
+                android:layout_width="150dp"
+                android:layout_height="30dp"
+                android:layout_gravity="center"
+                android:layout_marginTop="30dp"
+                android:layout_centerHorizontal="true"
+                android:textStyle="bold"
+                android:textColor="#9C0B03"
+                android:layout_below="@+id/addlayout"
+                android:background="@drawable/roundedplus"
+                android:text="اضافة"/>
+
+
+        </LinearLayout>
+
+
+
+        <LinearLayout
+            android:id="@+id/add2layout"
+            android:layout_width="match_parent"
+            android:layout_height="260dp"
+            android:layout_marginTop="260dp"
+            android:visibility="gone"
+            android:orientation="vertical">
+
+
+            <EditText
+                android:id="@+id/nameedittext2"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/rounded"
+                android:hint="الاسم"
+                android:padding="3dp"
+                android:layout_marginTop="20dp"
+                android:layout_marginLeft="20dp"
+                android:layout_marginRight="20dp"/>
+
+            <EditText
+                android:id="@+id/phoneedittext2"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/rounded"
+                android:hint="رقم الهاتف"
+                android:inputType="phone"
+                android:padding="3dp"
+                android:textAlignment="viewEnd"
+                android:layout_marginTop="20dp"
+                android:layout_marginLeft="20dp"
+                android:layout_marginRight="20dp"/>
+
+            <EditText
+                android:id="@+id/cardsnumberedittext2"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/rounded"
+                android:hint="عدد الكروت"
+                android:padding="3dp"
+                android:inputType="number"
+                android:layout_marginTop="20dp"
+                android:layout_marginLeft="20dp"
+                android:layout_marginRight="20dp"/>
+
+
+            <Button
+                android:id="@+id/addbutton2"
+                android:layout_width="150dp"
+                android:layout_height="30dp"
+                android:layout_gravity="center"
+                android:layout_marginTop="40dp"
+                android:layout_centerHorizontal="true"
+                android:textStyle="bold"
+                android:textColor="#9C0B03"
+                android:layout_below="@+id/addlayout"
+                android:background="@drawable/roundedplus"
+                android:text="اضافة"/>
+
+
+        </LinearLayout>
+
+
+
+
+        <android.support.v7.widget.RecyclerView
+            android:id="@+id/list1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="290dp"
+            android:visibility="gone"/>
+
+        <android.support.v7.widget.RecyclerView
+            android:id="@+id/list2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="290dp"
+            android:visibility="gone"/>
+
+
+        <android.support.v7.widget.CardView
+            android:id="@+id/card"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:elevation="50dp"
+            android:layout_alignParentBottom="true">
+
+            <LinearLayout
+                android:id="@+id/linearlicate"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/colorPrimary"
+                android:orientation="horizontal">
+
+                <LinearLayout
+                    android:id="@+id/addbuttonlayout"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:orientation="vertical">
+
+                    <ImageView
+                        android:id="@+id/addimage"
+                        android:layout_width="36dp"
+                        android:layout_height="36dp"
+                        android:layout_gravity="center"
+                        android:src="@drawable/ic_add_red_24dp"/>
+
+                    <TextView
+                        android:id="@+id/addtext"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:text="اضافة"
+                        android:textColor="#9C0B03"/>
+
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/addbuttonlayout2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:visibility="visible"
+                    android:orientation="vertical">
+
+                    <ImageView
+                        android:id="@+id/addimage2"
+                        android:layout_width="36dp"
+                        android:layout_height="36dp"
+                        android:layout_gravity="center"
+                        android:src="@drawable/ic_add_white_24dp"/>
+
+                    <TextView
+                        android:id="@+id/addtext2"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:text="اضافة"
+                        android:textColor="#FFF"/>
+
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/showbuttonlayout"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:orientation="vertical">
+
+                    <ImageView
+                        android:id="@+id/showicon"
+                        android:layout_width="36dp"
+                        android:layout_height="36dp"
+                        android:layout_gravity="center"
+                        android:src="@drawable/ic_list_white_24dp"/>
+
+                    <TextView
+                        android:id="@+id/showtext"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:text="عرض"
+                        android:textColor="#FFF"/>
+
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/usersbuttonlayout"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:visibility="visible"
+                    android:orientation="vertical">
+
+                    <ImageView
+                        android:id="@+id/usersicon"
+                        android:layout_width="36dp"
+                        android:layout_height="36dp"
+                        android:layout_gravity="center"
+                        android:src="@drawable/ic_list_white_24dp"/>
+
+                    <TextView
+                        android:id="@+id/userstext"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:text="مستخدمين"
+                        android:textColor="#FFF"/>
+
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/mapbuttonlayout"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:orientation="vertical">
+
+                    <ImageView
+                        android:id="@+id/mapicon"
+                        android:layout_width="36dp"
+                        android:layout_height="36dp"
+                        android:layout_gravity="center"
+                        android:src="@drawable/ic_map_white_24dp"/>
+
+                    <TextView
+                        android:id="@+id/maptext"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:text="الخريطة"
+                        android:textColor="#FFF"/>
+
+
+                </LinearLayout>
+
+            </LinearLayout>
+
+
+        </android.support.v7.widget.CardView>
+
+
+
+        <LinearLayout
+            android:id="@+id/mapfield"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_above="@id/card"
+            android:orientation="vertical"
+            android:visibility="gone">
+
+            <fragment xmlns:android="http://schemas.android.com/apk/res/android"
+                      xmlns:tools="http://schemas.android.com/tools"
+                      android:id="@+id/mapD"
+                      android:name="com.google.android.gms.maps.MapFragment"
+                      android:layout_width="match_parent"
+                      android:layout_height="match_parent"
+                      tools:context="com.amirahmed.podra.MainActivity"/>
+
+        </LinearLayout>
+
+
+
+
+    </RelativeLayout>
+
+
+
+</LinearLayout>
+

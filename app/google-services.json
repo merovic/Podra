@@ -1,0 +1,66 @@
+{
+  "project_info": {
+    "project_number": "90352489092",
+    "firebase_url": "https://podra-f0ab6.firebaseio.com",
+    "project_id": "podra-f0ab6",
+    "storage_bucket": "podra-f0ab6.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:90352489092:android:485bcfc806e39b8d",
+        "android_client_info": {
+          "package_name": "com.amirahmed.podra"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "90352489092-g4b9582n3haueldk30t329vdiso2l8hr.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.amirahmed.podra",
+            "certificate_hash": "49688c749b103a66ecc6f01ac6ba21333038fafe"
+          }
+        },
+        {
+          "client_id": "90352489092-fk05e804a7klgo4jlhfusekklifcv3ni.apps.googleusercontent.com",
+          "client_type": 3
+        },
+        {
+          "client_id": "90352489092-fk05e804a7klgo4jlhfusekklifcv3ni.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBnmsnlWbQtVaXeLTRyf9ZUEw4C66bF2HY"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 2,
+          "other_platform_oauth_client": [
+            {
+              "client_id": "90352489092-fk05e804a7klgo4jlhfusekklifcv3ni.apps.googleusercontent.com",
+              "client_type": 3
+            },
+            {
+              "client_id": "90352489092-tr0hmcr7k9348jcbqmare0k0erln3q7v.apps.googleusercontent.com",
+              "client_type": 2,
+              "ios_info": {
+                "bundle_id": "com.podra.app"
+              }
+            }
+          ]
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
